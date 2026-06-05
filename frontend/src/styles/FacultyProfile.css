@@ -1,0 +1,124 @@
+/* =========================
+   Faculty Profile Page
+========================= */
+
+.faculty-profile-container {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 40px;
+}
+
+.faculty-profile-card {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.faculty-profile-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+.faculty-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faculty-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-form-group label {
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.faculty-form-group input {
+  padding: 14px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.faculty-form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.faculty-form-group input:disabled {
+  background: #f1f5f9;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.faculty-update-btn {
+  margin-top: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.faculty-update-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.faculty-update-btn:active {
+  transform: translateY(0);
+}
+
+.faculty-profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.profile-info-text {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+  .faculty-profile-container {
+    padding: 20px;
+  }
+
+  .faculty-profile-card {
+    padding: 25px;
+  }
+
+  .faculty-profile-title {
+    font-size: 24px;
+  }
+}
