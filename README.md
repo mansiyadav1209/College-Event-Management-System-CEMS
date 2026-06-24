@@ -7,6 +7,27 @@ The College Event Management System (CEMS) is a full-stack web application desig
 ---
 
 
+
+
+
+
+# 🌐 Live Demo
+
+🎓 Frontend (Live Application)
+
+👉 https://college-event-management-system-cem-lake.vercel.app
+
+⚙️ Backend API
+
+👉 https://college-event-management-system-cem.vercel.app
+
+
+
+
+
+
+
+
 # MySQL Database Schema - College Event Management System
 
 <!-- ```sql
@@ -449,11 +470,11 @@ Import the provided SQL schema.
 
 ### Backend
 
-* Render
+* Vercel
 
 ### Database
 
-* Railway MySQL
+* Aiven
 
 ---
 
