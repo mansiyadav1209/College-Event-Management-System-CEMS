@@ -32,15 +32,8 @@ function EventDetails() {
   // State
 
   const [event, setEvent] = useState(null);
-
-
-
-
-
-  // Fetch Event
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-
+    
     fetchEvent();
 
   }, []);
