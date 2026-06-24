@@ -21,7 +21,7 @@ function FacultyDashboard() {
       const token = localStorage.getItem("token");
 
       const eventsRes = await axios.get(
-        `http://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`,
+        `https://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`,
         {
           headers: {
             Authorization: token,
@@ -34,7 +34,7 @@ function FacultyDashboard() {
       for (const event of eventsRes.data) {
         try {
           const studentRes = await axios.get(
-            `http://college-event-management-system-cem.vercel.app/api/events/students/${event.id}`
+            `https://college-event-management-system-cem.vercel.app/api/events/students/${event.id}`
           );
 
           totalStudents += studentRes.data.length;
@@ -44,7 +44,7 @@ function FacultyDashboard() {
       }
 
       const notificationRes = await axios.get(
-        "http://college-event-management-system-cem.vercel.app/api/notifications/faculty",
+        "https://college-event-management-system-cem.vercel.app/api/notifications/faculty",
         {
           headers: {
             Authorization: token,

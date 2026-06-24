@@ -31,7 +31,7 @@ function ManageStudents() {
 
       const res = await axios.get(
 
-        "http://college-event-management-system-cem.vercel.app/api/admin/students",
+        "https://college-event-management-system-cem.vercel.app/api/admin/students",
 
         {
           headers: {
@@ -73,7 +73,7 @@ function ManageStudents() {
 
       await axios.delete(
 
-        `http://college-event-management-system-cem.vercel.app/api/admin/students/${id}`,
+        `https://college-event-management-system-cem.vercel.app/api/admin/students/${id}`,
 
         {
           headers: {

@@ -54,7 +54,7 @@ function ManageEvents() {
 const fetchFaculties = async () => {
   try {
     const res = await axios.get(
-      "http://college-event-management-system-cem.vercel.app/api/events/faculties"
+      "https://college-event-management-system-cem.vercel.app/api/events/faculties"
     );
 
     setFaculties(res.data);
@@ -174,7 +174,7 @@ const fetchFaculties = async () => {
 
       await axios.put(
 
-        `http://college-event-management-system-cem.vercel.app/api/events/${editingEvent.id}`,
+        `https://college-event-management-system-cem.vercel.app/api/events/${editingEvent.id}`,
 
         editingEvent,
 

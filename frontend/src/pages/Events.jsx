@@ -107,7 +107,7 @@ function Events() {
 
       const res = await axios.post(
 
-        "http://college-event-management-system-cem.vercel.app/api/events/register",
+        "https://college-event-management-system-cem.vercel.app/api/events/register",
 
         {
 

@@ -34,7 +34,7 @@ function Dashboard() {
 
       const res = await axios.get(
 
-        `http://college-event-management-system-cem.vercel.app/api/students/dashboard/${user.id}`,
+        `https://college-event-management-system-cem.vercel.app/api/students/dashboard/${user.id}`,
 
         {
           headers: {

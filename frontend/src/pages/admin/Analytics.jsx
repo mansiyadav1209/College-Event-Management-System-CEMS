@@ -596,7 +596,7 @@ function Analytics() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://college-event-management-system-cem.vercel.app/api/admin/analytics",
+        "https://college-event-management-system-cem.vercel.app/api/admin/analytics",
         {
           headers: {
             Authorization: token

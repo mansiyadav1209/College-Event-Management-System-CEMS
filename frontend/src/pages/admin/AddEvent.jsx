@@ -112,7 +112,7 @@ useEffect(() => {
 const fetchFaculties = async () => {
 
  const res = await axios.get(
-   "http://college-event-management-system-cem.vercel.app/api/faculties"
+   "https://college-event-management-system-cem.vercel.app/api/faculties"
  );
 
  setFaculties(res.data);

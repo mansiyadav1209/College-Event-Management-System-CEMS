@@ -43,7 +43,7 @@ function Dashboard() {
         const res =
           await axios.get(
 
-            "http://college-event-management-system-cem.vercel.app/api/admin/dashboard",
+            "https://college-event-management-system-cem.vercel.app/api/admin/dashboard",
 
             {
               headers: {

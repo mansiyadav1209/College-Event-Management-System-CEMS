@@ -19,7 +19,7 @@ function AdminNotifications() {
         localStorage.getItem("token");
 
       await axios.post(
-        "http://college-event-management-system-cem.vercel.app/api/notifications/admin/send",
+        "https://college-event-management-system-cem.vercel.app/api/notifications/admin/send",
         {
           title,
           message,

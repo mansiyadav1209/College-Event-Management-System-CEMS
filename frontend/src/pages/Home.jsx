@@ -16,7 +16,7 @@ function Home() {
     try {
       const res = await axios.get(
       
-        "http://college-event-management-system-cem.vercel.app/api/events"
+        "https://college-event-management-system-cem.vercel.app/api/events"
     );
 
       // only first 3 events

@@ -63,7 +63,7 @@ function Notifications() {
 
       const res = await axios.get(
 
-        `http://college-event-management-system-cem.vercel.app/api/notifications/student/${user.id}`,
+        `https://college-event-management-system-cem.vercel.app/api/notifications/student/${user.id}`,
 
         {
 

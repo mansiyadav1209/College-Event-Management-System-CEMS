@@ -9,10 +9,10 @@ import axios from "axios";
 
 function FacultyProfile() {
 
-  // const user =
-  //   JSON.parse(
-  //     localStorage.getItem("user")
-  //   );
+  const user =
+    JSON.parse(
+      localStorage.getItem("user")
+    );
 
   const [profile, setProfile] =
     useState({
@@ -33,7 +33,7 @@ function FacultyProfile() {
   const fetchProfile = async () => {
 
     const res = await axios.get(
-      `http://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`
+      `https://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`
     );
 
     setProfile(res.data);
@@ -49,7 +49,7 @@ function FacultyProfile() {
     try {
 
       await axios.put(
-        `http://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`,
+        `https://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`,
         {
           phone: profile.phone,
           department:

@@ -16,7 +16,7 @@ function FacultyNotifications() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://college-event-management-system-cem.vercel.app/api/notifications/faculty",
+        "https://college-event-management-system-cem.vercel.app/api/notifications/faculty",
         {
           headers: {
             Authorization: token,

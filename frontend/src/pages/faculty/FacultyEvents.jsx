@@ -23,7 +23,7 @@ const fetchEvents = async () => {
 try {
 
   const res = await axios.get(
-    `http://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`
+    `https://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`
   );
 
   setEvents(res.data);
@@ -43,7 +43,7 @@ const fetchStudents = async (eventId) => {
 try {
 
   const res = await axios.get(
-    `http://college-event-management-system-cem.vercel.app/api/events/students/${eventId}`
+    `https://college-event-management-system-cem.vercel.app/api/events/students/${eventId}`
   );
 
   setStudents(res.data);
@@ -73,7 +73,7 @@ try {
     localStorage.getItem("token");
 
   await axios.post(
-    "http://college-event-management-system-cem.vercel.app/api/notifications/send",
+    "https://college-event-management-system-cem.vercel.app/api/notifications/send",
     {
       event_id: eventId,
       message,
