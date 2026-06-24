@@ -73,7 +73,7 @@ exports.registerUser = async (req, res) => {
       async (err, result) => {
 
         if (err) {
-
+          console.log("🔥 REGISTER ERROR:", err);
           return res.status(500).json({
 
             message:
