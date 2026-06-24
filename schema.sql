@@ -119,7 +119,7 @@ INSERT INTO users
     role
 )
 VALUES
-(
+
     'Admin',
     'admin@cems.com',
     '$2b$10$ReplaceWithHashedPassword',

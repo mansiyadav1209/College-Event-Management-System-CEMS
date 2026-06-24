@@ -162,6 +162,8 @@ function Footer() {
 
           © 2026 College Event Management System.
           All Rights Reserved.
+          <br></br>
+         <h6> Made by institute with ♡</h6>
 
         </p>
 

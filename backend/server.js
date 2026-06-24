@@ -5,13 +5,9 @@ const cors = require("cors");
 require("dotenv").config();
 
 
-
-
 // Import DB Connection
 
 require("./config/db");
-
-
 
 
 // Import Routes
@@ -35,9 +31,6 @@ const facultyRoutes =
   require("./routes/facultyRoutes");
 
 
-
-
-
 // Import Error Middleware
 
 const errorMiddleware =
@@ -59,16 +52,16 @@ const app = express();
 // MIDDLEWARE
 // ==============================
 
-// app.use(cors());
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://your-frontend-domain.vercel.app"
-    ],
-    credentials: true,
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:5173",
+//       "https://your-frontend-domain.vercel.app"
+//     ],
+//     credentials: true,
+//   })
+// );
 
 app.use(express.json());
 

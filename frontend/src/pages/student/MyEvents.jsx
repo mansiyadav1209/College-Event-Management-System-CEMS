@@ -57,7 +57,7 @@ function MyEvents() {
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/events/registered/${user.id}`,
+        `http://college-event-management-system-cem.vercel.app/api/events/registered/${user.id}`,
 
         {
 

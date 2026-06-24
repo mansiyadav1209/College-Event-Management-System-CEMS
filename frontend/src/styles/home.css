@@ -48,9 +48,13 @@ body {
   color: #38bdf8;
 }
 
+
+
+
 /* =========================
    Hero Section
 ========================= */
+
 
 .hero {
   min-height: 90vh;
@@ -62,7 +66,6 @@ body {
   );
 
   color: white;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,6 +381,7 @@ body {
 .footer p {
   color: #cbd5e1;
 }
+
 
 /* =========================
    Responsive

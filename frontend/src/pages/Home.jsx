@@ -16,12 +16,12 @@ function Home() {
     try {
       const res = await axios.get(
       
-        "http://localhost:5000/api/events"
+        "http://college-event-management-system-cem.vercel.app/api/events"
     );
 
       // only first 3 events
       console.log(res.data);
-      console.log(process.env.REACT_APP_API_URL);
+     // console.log(process.env.REACT_APP_API_URL);
       setEvents(res.data.slice(0, 3));
 
     } catch (error) {
@@ -43,9 +43,10 @@ function Home() {
         </div>
       </nav> */}
 
+
       {/* Hero Section */}
       <section className="hero">
-
+         
         <div className="hero-content">
           <h1>
             Welcome to College Event Management System
@@ -227,7 +228,6 @@ function Home() {
         </div>
 
       </section>
-
 
 
 

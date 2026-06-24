@@ -14,10 +14,10 @@ const db = mysql.createConnection({
 
   password: process.env.DB_PASSWORD,
 
-  database: process.env.DB_NAME,
-    waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0
+  database: process.env.DB_NAME
+  //   waitForConnections: true,
+  // connectionLimit: 10,
+  // queueLimit: 0
 
 });
 
@@ -40,7 +40,7 @@ db.connect((err) => {
       "MySQL Database Connected"
     );
     
-    connection.release();
+    // connection.release();
 
   }
 

@@ -432,7 +432,7 @@ function Profile() {
 
       const res = await axios.get(
 
-        `http://localhost:5000/api/students/profile/${loggedInUser.id}`,
+        `http://college-event-management-system-cem.vercel.app/api/students/profile/${loggedInUser.id}`,
 
         {
           headers: {
@@ -480,7 +480,7 @@ function Profile() {
 
       await axios.put(
 
-        `http://localhost:5000/api/students/profile/${user.id}`,
+        `http://college-event-management-system-cem.vercel.app/api/students/profile/${user.id}`,
 
         user,
 

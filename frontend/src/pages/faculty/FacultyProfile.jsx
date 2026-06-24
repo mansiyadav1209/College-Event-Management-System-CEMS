@@ -32,7 +32,7 @@ function FacultyProfile() {
   const fetchProfile = async () => {
 
     const res = await axios.get(
-      `http://localhost:5000/api/faculties/profile/${user.id}`
+      `http://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`
     );
 
     setProfile(res.data);
@@ -48,7 +48,7 @@ function FacultyProfile() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/faculties/profile/${user.id}`,
+        `http://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`,
         {
           phone: profile.phone,
           department:

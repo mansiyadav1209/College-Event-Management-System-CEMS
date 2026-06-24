@@ -69,7 +69,7 @@ CREATE TABLE registrations (
     FOREIGN KEY (event_id)
     REFERENCES events(id)
     <!-- ON DELETE CASCADE -->
-);
+<!-- ); -->
 
 
 -- ==========================

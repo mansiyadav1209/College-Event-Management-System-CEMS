@@ -115,7 +115,7 @@ console.log("EVENT DETAILS:",event);
 
       const res = await axios.post(
 
-        "http://localhost:5000/api/events/register",
+        "http://college-event-management-system-cem.vercel.app/api/events/register",
 
         {
 
