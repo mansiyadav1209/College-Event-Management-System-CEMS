@@ -9,10 +9,10 @@ import axios from "axios";
 
 function FacultyProfile() {
 
-  const user =
-    JSON.parse(
-      localStorage.getItem("user")
-    );
+  // const user =
+  //   JSON.parse(
+  //     localStorage.getItem("user")
+  //   );
 
   const [profile, setProfile] =
     useState({
@@ -22,6 +22,7 @@ function FacultyProfile() {
       department: ""
     });
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
      const user = JSON.parse(
           localStorage.getItem("user")
