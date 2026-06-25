@@ -15,11 +15,8 @@ localStorage.getItem("user")
 );
 
 useEffect(() => {
-  
-fetchEvents();
-}, []);
-
-const fetchEvents = async () => {
+  if(user?.id){
+    const fetchEvents = async () => {
 
 
 try {
@@ -38,6 +35,30 @@ try {
 
 
 };
+
+fetchEvents();
+}
+}, [user?.id]);
+
+// const fetchEvents = async () => {
+
+
+// try {
+
+//   const res = await axios.get(
+//     `https://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`
+//   );
+
+//   setEvents(res.data);
+
+// } catch (err) {
+
+//   console.log(err);
+
+// }
+
+
+// };
 
 const fetchStudents = async (eventId) => {
 

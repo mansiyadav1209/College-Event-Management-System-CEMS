@@ -33,16 +33,8 @@ function EventDetails() {
 
   const [event, setEvent] = useState(null);
   useEffect(() => {
-    
-    fetchEvent();
-
-  }, []);
-
-
-console.log("EVENT DETAILS:",event);
-
-
-  const fetchEvent = async () => {
+   
+    const fetchEvent = async () => {
 
     try {
 
@@ -58,6 +50,31 @@ console.log("EVENT DETAILS:",event);
     }
 
   };
+   fetchEvent(); 
+  
+
+  }, [id]);
+
+
+console.log("EVENT DETAILS:",event);
+
+
+  // const fetchEvent = async () => {
+
+  //   try {
+
+  //     const data =
+  //       await getSingleEvent(id);
+
+  //     setEvent(data);
+
+  //   } catch (err) {
+
+  //     console.log(err);
+
+  //   }
+
+  // };
 
 
 

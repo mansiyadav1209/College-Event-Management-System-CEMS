@@ -150,9 +150,8 @@ function FacultyProfile() {
   });
 
   useEffect(() => {
-    fetchProfile();
-  }, []);
-
+    if(user?.id){
+      
   const fetchProfile = async () => {
     try {
       const res = await axios.get(
@@ -164,6 +163,21 @@ function FacultyProfile() {
       console.log(err);
     }
   };
+  
+    fetchProfile();}
+  }, [user?.id]);
+
+  // const fetchProfile = async () => {
+  //   try {
+  //     const res = await axios.get(
+  //       `https://college-event-management-system-cem.vercel.app/api/faculties/profile/${user.id}`
+  //     );
+
+  //     setProfile(res.data);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   const handleChange = (e) => {
     setProfile({

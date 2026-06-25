@@ -14,11 +14,8 @@ function FacultyDashboard() {
   const user = JSON.parse(localStorage.getItem("user"));
  
   useEffect(() => {
-    
-    fetchStats();
-  }, []);
-
-  const fetchStats = async () => {
+  if (user?.id) {
+    const fetchStats = async () => {
     try {
       const token = localStorage.getItem("token");
 
@@ -64,6 +61,60 @@ function FacultyDashboard() {
       console.log(err);
     }
   };
+    fetchStats();
+  }
+}, [user?.id]);
+  // useEffect(() => {
+    
+    
+  // }, []);
+
+  // const fetchStats = async () => {
+  //   try {
+  //     const token = localStorage.getItem("token");
+
+  //     const eventsRes = await axios.get(
+  //       `https://college-event-management-system-cem.vercel.app/api/events/faculty/${user.id}`,
+  //       {
+  //         headers: {
+  //           Authorization: token,
+  //         },
+  //       }
+  //     );
+
+  //     let totalStudents = 0;
+
+  //     for (const event of eventsRes.data) {
+  //       try {
+  //         const studentRes = await axios.get(
+  //           `https://college-event-management-system-cem.vercel.app/api/events/students/${event.id}`
+  //         );
+
+  //         totalStudents += studentRes.data.length;
+  //       } catch (err) {
+  //         console.log(err);
+  //       }
+  //     }
+
+  //     const notificationRes = await axios.get(
+  //       "https://college-event-management-system-cem.vercel.app/api/notifications/faculty",
+  //       {
+  //         headers: {
+  //           Authorization: token,
+  //         },
+  //       }
+  //     );
+
+  //     setStats({
+  //       events: eventsRes.data.length,
+  //       students: totalStudents,
+  //       notifications: notificationRes.data.length,
+  //     });
+
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   return (
     <div className="faculty-layout">
